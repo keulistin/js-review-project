@@ -10,7 +10,7 @@ const todoList = document.getElementById('todo-list');
 
 //Function to render todos
 function renderTodos () {
-    todoList.innerHtml = ''; //Clear the list
+    todoList.innerHTML = ''; //Clear the list
     todos.forEach((todo, index) => {
         const li = document.createElement('li');
         li.className = 'todo-item';
